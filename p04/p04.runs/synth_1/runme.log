@@ -9,41 +9,22 @@
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source e1_Count_consec_ones.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 319.508 ; gain = 75.840
 Command: synth_design -top e1_Count_consec_ones -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 108 
+INFO: Helper process launched with PID 4396 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 430.637 ; gain = 98.250
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 431.242 ; gain = 99.070
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'e1_Count_consec_ones' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:15]
-WARNING: [Synth 8-614] signal 'vector' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:32]
-WARNING: [Synth 8-614] signal 'n_max' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:32]
-WARNING: [Synth 8-614] signal 'max' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:32]
-WARNING: [Synth 8-3848] Net idx in module/entity e1_Count_consec_ones does not have driver. [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:19]
-WARNING: [Synth 8-3848] Net seg in module/entity e1_Count_consec_ones does not have driver. [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:10]
-WARNING: [Synth 8-3848] Net an in module/entity e1_Count_consec_ones does not have driver. [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:11]
+WARNING: [Synth 8-614] signal 'max' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:35]
+WARNING: [Synth 8-614] signal 'vector' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:35]
+WARNING: [Synth 8-614] signal 'n_max' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'e1_Count_consec_ones' (1#1) [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:15]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[6]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[5]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[4]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[3]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[2]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[1]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[0]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[7]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[6]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[5]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[4]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[3]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[2]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[1]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 487.121 ; gain = 154.734
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 487.477 ; gain = 155.305
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,10 +37,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 487.121 ; gain = 154.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 487.477 ; gain = 155.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 487.121 ; gain = 154.734
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 487.477 ; gain = 155.305
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -68,44 +49,38 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/aulas/cr/projects/p04/p04.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
 Finished Parsing XDC File [D:/aulas/cr/projects/p04/p04.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/aulas/cr/projects/p04/p04.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/e1_Count_consec_ones_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/e1_Count_consec_ones_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.867 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.949 ; gain = 0.000
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 794.281 ; gain = 1.332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 823.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 794.281 ; gain = 461.895
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 823.867 ; gain = 491.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 794.281 ; gain = 461.895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 823.867 ; gain = 491.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 794.281 ; gain = 461.895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 823.867 ; gain = 491.695
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'e1_Count_consec_ones'
-INFO: [Synth 8-5545] ROM "n_max" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "max" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "vector" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "NS" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:69]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:27]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'max_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -115,12 +90,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_NS_reg' [D:/aula
                   finish |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'e1_Count_consec_ones'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_NS_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:27]
-WARNING: [Synth 8-327] inferring latch for variable 'max_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:60]
-WARNING: [Synth 8-327] inferring latch for variable 'vector_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:37]
-WARNING: [Synth 8-327] inferring latch for variable 'n_max_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'vector_reg' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 794.281 ; gain = 461.895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 823.867 ; gain = 491.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -133,13 +105,15 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -150,13 +124,15 @@ Hierarchical RTL Component report
 Module e1_Count_consec_ones 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -173,23 +149,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[6]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[5]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[4]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[3]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[2]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[1]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port seg[0]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[7]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[6]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[5]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[4]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[3]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[2]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[1]
-WARNING: [Synth 8-3331] design e1_Count_consec_ones has unconnected port an[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 794.281 ; gain = 461.895
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 823.867 ; gain = 491.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -201,13 +162,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 820.816 ; gain = 488.430
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 824.195 ; gain = 492.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 820.965 ; gain = 488.578
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 857.676 ; gain = 525.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,8 +179,77 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_169/O (LUT2)
+     1: i_169/I1 (LUT2)
+     2: i_28/O (LUT5)
+     3: i_28/I0 (LUT5)
+     4: i_169/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:6]
+Inferred a: "set_disable_timing -from I1 -to O i_169"
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_16/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[1]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_16/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[2]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_16/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[3]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_16/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[4]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_17/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[5]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_17/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[6]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_17/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[7]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_17/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[8]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_18/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[9]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_18/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[10]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_18/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[11]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_18/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[12]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_19/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[13]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_19/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[14]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_19/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[15]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_19/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[16]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_20/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[17]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_20/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[18]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_20/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[19]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_20/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[20]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_21/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[21]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_21/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[22]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_21/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[23]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_21/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[24]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_22/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[25]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_22/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[26]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_22/O[2]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[27]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_22/O[3]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[28]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/O[0]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[29]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/O[1]'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max_reg[30]__0 /D'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_23/O[2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,20 +273,84 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[31] with 1st driver pin 'max_reg[31]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[31] with 2nd driver pin 'max_reg[31]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[30] with 1st driver pin 'max_reg[30]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[30] with 2nd driver pin 'max_reg[30]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[29] with 1st driver pin 'max_reg[29]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[29] with 2nd driver pin 'max_reg[29]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[28] with 1st driver pin 'max_reg[28]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[28] with 2nd driver pin 'max_reg[28]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[27] with 1st driver pin 'max_reg[27]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[27] with 2nd driver pin 'max_reg[27]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[26] with 1st driver pin 'max_reg[26]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[26] with 2nd driver pin 'max_reg[26]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[25] with 1st driver pin 'max_reg[25]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[25] with 2nd driver pin 'max_reg[25]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[24] with 1st driver pin 'max_reg[24]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[24] with 2nd driver pin 'max_reg[24]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[23] with 1st driver pin 'max_reg[23]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[23] with 2nd driver pin 'max_reg[23]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[22] with 1st driver pin 'max_reg[22]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[22] with 2nd driver pin 'max_reg[22]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[21] with 1st driver pin 'max_reg[21]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[21] with 2nd driver pin 'max_reg[21]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[20] with 1st driver pin 'max_reg[20]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[20] with 2nd driver pin 'max_reg[20]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[19] with 1st driver pin 'max_reg[19]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[19] with 2nd driver pin 'max_reg[19]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[18] with 1st driver pin 'max_reg[18]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[18] with 2nd driver pin 'max_reg[18]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[17] with 1st driver pin 'max_reg[17]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[17] with 2nd driver pin 'max_reg[17]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[16] with 1st driver pin 'max_reg[16]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin max[16] with 2nd driver pin 'max_reg[16]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[15] with 1st driver pin 'max_reg[15]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[15] with 2nd driver pin 'max_reg[15]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[14] with 1st driver pin 'max_reg[14]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[14] with 2nd driver pin 'max_reg[14]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[13] with 1st driver pin 'max_reg[13]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[13] with 2nd driver pin 'max_reg[13]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[12] with 1st driver pin 'max_reg[12]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[12] with 2nd driver pin 'max_reg[12]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[11] with 1st driver pin 'max_reg[11]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[11] with 2nd driver pin 'max_reg[11]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[10] with 1st driver pin 'max_reg[10]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[10] with 2nd driver pin 'max_reg[10]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[9] with 1st driver pin 'max_reg[9]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[9] with 2nd driver pin 'max_reg[9]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[8] with 1st driver pin 'max_reg[8]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[8] with 2nd driver pin 'max_reg[8]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[7] with 1st driver pin 'max_reg[7]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[7] with 2nd driver pin 'max_reg[7]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[6] with 1st driver pin 'max_reg[6]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[6] with 2nd driver pin 'max_reg[6]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[5] with 1st driver pin 'max_reg[5]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[5] with 2nd driver pin 'max_reg[5]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[4] with 1st driver pin 'max_reg[4]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[4] with 2nd driver pin 'max_reg[4]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[3] with 1st driver pin 'max_reg[3]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[3] with 2nd driver pin 'max_reg[3]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[2] with 1st driver pin 'max_reg[2]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[2] with 2nd driver pin 'max_reg[2]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[1] with 1st driver pin 'max_reg[1]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[1] with 2nd driver pin 'max_reg[1]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[0] with 1st driver pin 'max_reg[0]/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:41]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin led_OBUF[0] with 2nd driver pin 'max_reg[0]__0/Q' [D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd:30]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,29 +358,30 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \max[0]__0_i_1 /O'
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -302,48 +397,48 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     3|
-|2     |CARRY4 |    14|
-|3     |LUT2   |    35|
-|4     |LUT3   |     4|
-|5     |LUT4   |    33|
-|6     |LUT6   |     5|
-|7     |FDRE   |     2|
-|8     |LD     |    98|
-|9     |IBUF   |    17|
-|10    |OBUF   |    16|
-|11    |OBUFT  |    15|
+|1     |BUFG   |     2|
+|2     |CARRY4 |    26|
+|3     |LUT1   |     1|
+|4     |LUT2   |    62|
+|5     |LUT4   |    65|
+|6     |LUT5   |     3|
+|7     |LUT6   |    43|
+|8     |FDRE   |    66|
+|9     |LD     |    48|
+|10    |IBUF   |    17|
+|11    |OBUF   |    16|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   242|
+|1     |top      |       |   349|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 860.336 ; gain = 528.164
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 831.262 ; gain = 191.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 831.262 ; gain = 498.875
+Synthesis finished with 0 errors, 65 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 860.336 ; gain = 191.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 860.336 ; gain = 528.164
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 842.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.336 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 98 instances were transformed.
-  LD => LDCE: 98 instances
+  A total of 48 instances were transformed.
+  LD => LDCE: 48 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 67 Warnings, 65 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:49 . Memory (MB): peak = 842.762 ; gain = 523.254
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 842.762 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 860.336 ; gain = 540.988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 860.336 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/aulas/cr/projects/p04/p04.runs/synth_1/e1_Count_consec_ones.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file e1_Count_consec_ones_utilization_synth.rpt -pb e1_Count_consec_ones_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 25 23:49:14 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 17:47:38 2019...

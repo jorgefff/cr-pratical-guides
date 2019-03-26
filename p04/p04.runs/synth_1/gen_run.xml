@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553557639">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553622389">
   <File Type="PA-TCL" Name="e1_Count_consec_ones.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="e1_Count_consec_ones_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="e1_Count_consec_ones_reports.tcl"/>
   <File Type="RDS-RDS" Name="e1_Count_consec_ones.vds"/>
   <File Type="RDS-UTIL" Name="e1_Count_consec_ones_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="e1_Count_consec_ones_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="e1_Count_consec_ones.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="e1_Count_consec_ones_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="e1_Count_consec_ones_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/e1_Count_consec_ones.vhd">

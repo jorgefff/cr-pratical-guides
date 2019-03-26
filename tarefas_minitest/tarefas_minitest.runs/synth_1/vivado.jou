@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 19 01:26:20 2019
+# Process ID: 5748
+# Current directory: D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.runs/synth_1
+# Command line: vivado.exe -log tarefa3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tarefa3.tcl
+# Log file: D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.runs/synth_1/tarefa3.vds
+# Journal file: D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tarefa3.tcl -notrace

@@ -1,0 +1,215 @@
+
+*** Running vivado
+    with args -log tarefa3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source tarefa3.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source tarefa3.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 319.867 ; gain = 72.141
+Command: link_design -top tarefa3 -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/aulas/cr/projects/tarefas_minitest/tarefas_minitest.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 645.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 56 Warnings, 56 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 649.641 ; gain = 324.313
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net led_OBUF[0] has multiple drivers: led_OBUF[1]_inst_i_1/O, and sw_IBUF[1]_inst/O.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.520 . Memory (MB): peak = 649.641 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 56 Warnings, 56 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 01:28:42 2019...

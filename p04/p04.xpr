@@ -60,6 +60,38 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/aula8ficheiros/segment_decoder.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../aula8ficheiros/segment_decoder.vhd"/>
+          <Attr Name="ImportTime" Val="1553462224"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/aula8ficheiros/disp.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../aula8ficheiros/disp.vhd"/>
+          <Attr Name="ImportTime" Val="1553462276"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/aula8ficheiros/BinToBCD16.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../aula8ficheiros/BinToBCD16.vhd"/>
+          <Attr Name="ImportTime" Val="1554219712"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/aula8ficheiros/BCD_disp.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../aula8ficheiros/BCD_disp.vhd"/>
+          <Attr Name="ImportTime" Val="1554198788"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/e1_Count_consec_ones.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -69,7 +101,6 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="e1_Count_consec_ones"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

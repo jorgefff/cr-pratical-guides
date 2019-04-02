@@ -29,7 +29,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo d:/aulas/cr/projects/p04/p04.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd
+read_vhdl -library xil_defaultlib {
+  D:/aulas/cr/projects/p04/p04.srcs/sources_1/imports/aula8ficheiros/segment_decoder.vhd
+  D:/aulas/cr/projects/p04/p04.srcs/sources_1/imports/aula8ficheiros/disp.vhd
+  D:/aulas/cr/projects/p04/p04.srcs/sources_1/imports/aula8ficheiros/BinToBCD16.vhd
+  D:/aulas/cr/projects/p04/p04.srcs/sources_1/imports/aula8ficheiros/BCD_disp.vhd
+  D:/aulas/cr/projects/p04/p04.srcs/sources_1/new/e1_Count_consec_ones.vhd
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

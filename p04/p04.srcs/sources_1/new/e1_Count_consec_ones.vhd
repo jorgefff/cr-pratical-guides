@@ -19,6 +19,7 @@ architecture Behavioral of e1_Count_consec_ones is
     signal CS, NS   : state := INIT;
     signal idx, n_idx : integer := 0;
     signal max, n_max : integer := 0;
+    signal new_max, n_new_max : integer := 0;
     
 begin
 
@@ -28,64 +29,71 @@ begin
             CS <= NS;
             idx <= n_idx;
             max <= n_max;
+            new_max <= n_new_max;
         end if;
     end process;
 
     
-    process(CS, idx, sw)
-        --variable count : integer := 0;
-        
+    process(CS)
     begin
         NS <= CS;
-        n_idx <= idx;
         n_max <= max;
-    
+        n_new_max <= new_max;
+        n_idx <= idx;
+        
         case CS is
             -- Initial state
             when INIT =>
+                NS <= CHECKING;
                 vector <= sw;
                 n_idx <= 0;
-                NS <= CHECKING;
-            
+                n_max <= 0;
+                n_new_max <= 0;
+                
             -- Passing zeros, change when it finds one  
             when CHECKING =>
-                if (idx > vector'left) then
-                    NS <= FINISH;
-                elsif (vector(idx) = '1') then
-                    --count := count +1;
-                    n_max <= 0;
-                    NS <= ONES;
-                else
-                    n_idx <= idx +1;
-                    NS <= CHECKING;
-                 end if;
-                 
-            -- 
-            when ONES =>
-                if (idx > vector'left) then
-                    NS <= FINISH;
-                elsif (vector(idx) = '1') then
-                    n_max <= n_max + 1;
-                    NS <= ONES;
-                else
-                    NS <= CHECKING;
+                if (new_max > max) then
+                    n_max <= new_max;
                 end if;
                 
-                if (n_max > max) then
-                    max <= n_max;
+                if (idx > 15) then
+                    NS <= FINISH;
+                elsif (vector(idx) = '0') then
+                    NS <= CHECKING;
+                    n_idx <= idx +1;
+                else
+                    NS <= ONES;
+                end if;
+                
+            -- 
+            when ONES =>
+                if (new_max > max) then
+                    n_max <= new_max;
+                end if;
+                
+                if (idx > 15) then
+                    NS <= FINISH;
+                elsif (vector(idx) = '1') then
+                    NS <= ONES;
+                    n_idx <= idx +1;
+                    n_new_max <= new_max +1;
+                else
+                    NS <= CHECKING;
+                    n_new_max <= 0;
                 end if;
                 
             -- Show the max, restart if SW changes
             when FINISH =>
-                --led <= std_logic_vector(to_unsigned(max, 16));
                 if (sw /= vector) then
                     NS <= INIT;
+                else
+                    NS <= FINISH;
                 end if;
-                
         end case;
+        led <= std_logic_vector(to_unsigned(max, 16));
     end process;
     
-    led <= std_logic_vector(to_unsigned(max, 16));
+    
 
 
 end Behavioral;

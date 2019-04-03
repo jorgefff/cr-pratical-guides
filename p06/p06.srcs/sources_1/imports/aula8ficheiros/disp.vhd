@@ -1,6 +1,10 @@
-library IEEE;	 use IEEE.STD_LOGIC_1164.all; use IEEE.STD_LOGIC_UNSIGNED.all;        
+library IEEE;	 
+use IEEE.STD_LOGIC_1164.all; 
+use IEEE.STD_LOGIC_UNSIGNED.all;
+        
 entity DispCont is 
     port ( 	       clk		            : in  std_logic;
+                   enable               : in  std_logic;
 	               leftL, near_leftL	: in std_logic_vector (3 downto 0);
 	               near_rightL, rightL 	: in std_logic_vector (3 downto 0);
 	               leftR, near_leftR	: in std_logic_vector (3 downto 0);
@@ -28,5 +32,5 @@ begin	-- activação sequencial dos displays
    end if;	
 end process;
 decoder : entity work.segment_decoder		-- descodificador de segmentos
-	      port map (convert_me, segments);
+	      port map (enable, convert_me, segments);
 end Behavioral;

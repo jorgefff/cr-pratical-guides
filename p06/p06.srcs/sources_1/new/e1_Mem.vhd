@@ -106,7 +106,8 @@ begin
                 reset => '0');
     
     send_to_disp : entity work.DispCont
-    port map (  clk     => clk,
+    port map (  enable => '1',
+                clk     => clk,
                 -- left side
                 leftL       => value(31 downto 28),
                 near_leftL  => value(27 downto 24),

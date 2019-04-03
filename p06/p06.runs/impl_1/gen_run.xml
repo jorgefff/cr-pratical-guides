@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1554264633">
-  <File Type="BITSTR-BMM" Name="Mem_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Mem_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Mem_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="Mem_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="Mem.tcl"/>
-  <File Type="OPT-TIMING" Name="Mem_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Mem_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="Mem_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="Mem_reports.tcl"/>
-  <File Type="OPT-DRC" Name="Mem_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Mem.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Mem_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Mem_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Mem_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Mem_placed.dcp"/>
-  <File Type="PLACE-IO" Name="Mem_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Mem_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Mem_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Mem_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Mem_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Mem_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Mem_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="Mem.bgn"/>
-  <File Type="PLACE-TIMING" Name="Mem_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Mem_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Mem.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Mem_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Mem_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Mem_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="Mem.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Mem_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Mem_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Mem_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Mem_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="Mem_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Mem_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1554330994">
+  <File Type="BITSTR-BMM" Name="MemMaxMin_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MemMaxMin_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="MemMaxMin_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="MemMaxMin_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MemMaxMin.tcl"/>
+  <File Type="OPT-TIMING" Name="MemMaxMin_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="MemMaxMin_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="MemMaxMin_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MemMaxMin_reports.tcl"/>
+  <File Type="OPT-DRC" Name="MemMaxMin_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MemMaxMin.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MemMaxMin_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="MemMaxMin_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="MemMaxMin_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MemMaxMin_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MemMaxMin_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MemMaxMin_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MemMaxMin_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MemMaxMin_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MemMaxMin_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MemMaxMin_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MemMaxMin_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="MemMaxMin.bgn"/>
+  <File Type="PLACE-TIMING" Name="MemMaxMin_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MemMaxMin_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="MemMaxMin.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MemMaxMin_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MemMaxMin_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MemMaxMin_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="MemMaxMin.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="MemMaxMin_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MemMaxMin_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MemMaxMin_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MemMaxMin_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MemMaxMin_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MemMaxMin_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Mem.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="Mem_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Mem.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Mem_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Mem_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Mem.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Mem_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Mem_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Mem_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Mem_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Mem_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="Mem_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Mem_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Mem_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Mem_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Mem_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Mem_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Mem_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Mem_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Mem_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Mem_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Mem_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Mem_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Mem_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Mem_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Mem.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Mem_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="Mem.rbt"/>
-  <File Type="BITSTR-NKY" Name="Mem.nky"/>
-  <File Type="BG-DRC" Name="Mem.drc"/>
-  <File Type="RDI-RDI" Name="Mem.vdi"/>
+  <File Type="BITSTR-LTX" Name="MemMaxMin.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="MemMaxMin_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="MemMaxMin.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MemMaxMin_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MemMaxMin_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="MemMaxMin.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MemMaxMin_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MemMaxMin_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MemMaxMin_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MemMaxMin_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MemMaxMin_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MemMaxMin_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MemMaxMin_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MemMaxMin_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MemMaxMin_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MemMaxMin_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MemMaxMin_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MemMaxMin_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MemMaxMin_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MemMaxMin_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MemMaxMin_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MemMaxMin_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MemMaxMin_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MemMaxMin_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MemMaxMin_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="MemMaxMin.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MemMaxMin_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="MemMaxMin.rbt"/>
+  <File Type="BITSTR-NKY" Name="MemMaxMin.nky"/>
+  <File Type="BG-DRC" Name="MemMaxMin.drc"/>
+  <File Type="RDI-RDI" Name="MemMaxMin.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -87,8 +87,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/e2_MemMaxMin.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/repo/freq_div.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../repo/freq_div.vhd"/>
         <Attr Name="ImportTime" Val="1554256027"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -97,14 +104,14 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/e1_Mem.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Mem"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="MemMaxMin"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

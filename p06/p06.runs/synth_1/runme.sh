@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Mem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mem.tcl
+EAStep vivado -log MemMaxMin.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MemMaxMin.tcl

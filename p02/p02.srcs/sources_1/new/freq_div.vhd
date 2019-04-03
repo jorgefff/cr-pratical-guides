@@ -19,19 +19,19 @@ architecture Behavioral of freq_div is
     signal s_count : natural := 0;
     
 begin
-    process(clk_in,reset)
-    begin
-        
-        if (reset = '1') then
-            s_count <= 0;
-            s_clock <= '0';
-                    
-        elsif (rising_edge (clk_in)) then
-            s_count <= s_count +1;
-            if (s_count > div / 2 - 1) then
-                s_clock <= not(s_clock);
-                s_count <= 0;            
-            end if;
+    process(clk_in)
+    begin        
+        if (rising_edge (clk_in)) then
+			if (reset = '1') then
+				s_count <= 0;
+				s_clock <= '0';
+			else
+				s_count <= s_count +1;
+				if (s_count > div / 2 - 1) then
+					s_clock <= not(s_clock);
+					s_count <= 0;            
+				end if;
+			end if;
         end if;
         
     end process;

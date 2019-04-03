@@ -58,7 +58,7 @@ begin
                     n_max <= new_max;
                 end if;
                 
-                if (idx > 15) then
+                if (idx > vector'left) then
                     NS <= FINISH;
                 elsif (vector(idx) = '0') then
                     NS <= CHECKING;
@@ -73,7 +73,7 @@ begin
                     n_max <= new_max;
                 end if;
                 
-                if (idx > 15) then
+                if (idx > vector'left) then
                     NS <= FINISH;
                 elsif (vector(idx) = '1') then
                     NS <= ONES;

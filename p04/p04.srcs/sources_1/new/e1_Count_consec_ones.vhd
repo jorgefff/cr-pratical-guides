@@ -5,6 +5,7 @@ use IEEE.numeric_std.all;
 
 entity e1_Count_consec_ones is
     port (  clk : in std_logic;
+            btnC : in std_logic;
             sw  : in  std_logic_vector(15 downto 0);
             led : out std_logic_vector(15 downto 0);
             seg : out std_logic_vector(6 downto 0);
@@ -21,7 +22,7 @@ architecture Behavioral of e1_Count_consec_ones is
     signal max, n_max : integer := 0;
     signal new_max, n_new_max : integer := 0;
     signal s_max : std_logic_vector(15 downto 0);
-    
+    signal s_en : std_logic;    
 begin
 
     process (clk)
@@ -32,6 +33,7 @@ begin
             max <= n_max;
             s_max <= std_logic_vector(to_unsigned(n_max, 16));
             new_max <= n_new_max;
+            s_en <= not(btnC);
         end if;
     end process;
 
@@ -99,6 +101,8 @@ begin
     
     send_to_disp : entity work.BCD_disp
     port map (  clk     => clk,
+                enable => s_en,
+                reset  => '0',
                 input   => s_max,
                 an      => an,
                 seg     => seg);

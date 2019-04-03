@@ -2,10 +2,12 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity BCD_disp is
     Port ( clk     : in std_logic;
+           enable  : in std_logic;
+           reset   : in std_logic;
            input   : in STD_LOGIC_VECTOR (15 downto 0);
            an      : out STD_LOGIC_VECTOR (7 downto 0);
            seg     : out STD_LOGIC_VECTOR (6 downto 0));
-           --btnC    : in STD_LOGIC);
+           
 end BCD_disp;
 
 architecture Behavioral of BCD_disp is
@@ -17,6 +19,7 @@ request <= '1';
 
 disp:   entity work.DispCont
         port map(   clk             => clk,
+                    enable          => enable,
                     leftL           => (others =>'0'),
                     near_leftL      => (others =>'0'),
                     near_rightL     => (others =>'0'),
@@ -30,7 +33,7 @@ disp:   entity work.DispCont
                     
 conv:   entity work.BinToBCD16
         port map(   clk     => clk,
-                    reset   => '0',
+                    reset   => reset,
                     ready   => open,
                     binary  => input,
                     request => request,

@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 10 04:27:16 2019
+# Process ID: 2080
+# Current directory: D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/top.vds
+# Journal file: D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 319.520 ; gain = 71.586
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3624 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 469.125 ; gain = 100.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/new/top.vhd:15]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/.Xil/Vivado-2080-DESKTOP-UEV5SH3/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'mem_1' of component 'blk_mem_gen_0' [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/new/top.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/.Xil/Vivado-2080-DESKTOP-UEV5SH3/realtime/blk_mem_gen_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'blk_mem_gen_1' declared at 'D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/.Xil/Vivado-2080-DESKTOP-UEV5SH3/realtime/blk_mem_gen_1_stub.vhdl:5' bound to instance 'mem_2' of component 'blk_mem_gen_1' [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/new/top.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/.Xil/Vivado-2080-DESKTOP-UEV5SH3/realtime/blk_mem_gen_1_stub.vhdl:14]
+INFO: [Synth 8-638] synthesizing module 'sendToDisp' [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/imports/bcd_disp_individual_en/disp.vhd:15]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/imports/bcd_disp_individual_en/disp.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'segment_decoder' [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/imports/bcd_disp_individual_en/segment_decoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'segment_decoder' (1#1) [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/imports/bcd_disp_individual_en/segment_decoder.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'sendToDisp' (2#1) [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/imports/bcd_disp_individual_en/disp.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'top' (3#1) [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/new/top.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 525.410 ; gain = 156.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 525.410 ; gain = 156.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 525.410 ; gain = 156.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_1'
+Finished Parsing XDC File [d:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_1'
+Parsing XDC File [d:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'mem_2'
+Finished Parsing XDC File [d:/aulas/cr/projects/prep_test1/prep_test1.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'mem_2'
+Parsing XDC File [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:207]
+Finished Parsing XDC File [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/aulas/cr/projects/prep_test1/prep_test1.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.410 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 861.410 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 861.410 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem_1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 862.969 ; gain = 494.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 862.969 ; gain = 494.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mem_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem_2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 862.969 ; gain = 494.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 862.969 ; gain = 494.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module segment_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      7 Bit        Muxes := 1     
+Module sendToDisp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 862.969 ; gain = 494.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 864.387 ; gain = 495.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |blk_mem_gen_0_bbox_0 |     1|
+|2     |blk_mem_gen_1_bbox_1 |     1|
+|3     |BUFG                 |     1|
+|4     |CARRY4               |     5|
+|5     |LUT1                 |     1|
+|6     |LUT3                 |     8|
+|7     |LUT6                 |    11|
+|8     |FDRE                 |    17|
+|9     |IBUF                 |     6|
+|10    |OBUF                 |    15|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-------------+-----------+------+
+|      |Instance     |Module     |Cells |
++------+-------------+-----------+------+
+|1     |top          |           |    80|
+|2     |  sendToDisp |sendToDisp |    42|
++------+-------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 874.875 ; gain = 506.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 874.875 ; gain = 168.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 874.875 ; gain = 506.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 888.082 ; gain = 531.121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.082 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/aulas/cr/projects/prep_test1/prep_test1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 04:28:23 2019...

@@ -188,23 +188,23 @@ set_property PACKAGE_PIN P2 [get_ports {led[15]}]
 
 ##Buttons
 ##Bank = 15, Pin name = IO_L3P_T0_DQS_AD1P_15,				Sch name = CPU_RESET
-#set_property PACKAGE_PIN C12 [get_ports btnCpuReset]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
-##Bank = 15, Pin name = IO_L11N_T1_SRCC_15,					Sch name = BTNC
-#set_property PACKAGE_PIN E16 [get_ports btnC]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
-##Bank = 15, Pin name = IO_L14P_T2_SRCC_15,					Sch name = BTNU
-#set_property PACKAGE_PIN F15 [get_ports btnU]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
-##Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = BTNL
-#set_property PACKAGE_PIN T16 [get_ports btnL]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnL]
-##Bank = 14, Pin name = IO_25_14,							Sch name = BTNR
-#set_property PACKAGE_PIN R10 [get_ports btnR]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnR]
-##Bank = 14, Pin name = IO_L21P_T3_DQS_14,					Sch name = BTND
-#set_property PACKAGE_PIN V10 [get_ports btnD]						
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnD]
+set_property PACKAGE_PIN C12 [get_ports btnCpuReset]				
+	set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
+#Bank = 15, Pin name = IO_L11N_T1_SRCC_15,					Sch name = BTNC
+set_property PACKAGE_PIN E16 [get_ports btnC]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+#Bank = 15, Pin name = IO_L14P_T2_SRCC_15,					Sch name = BTNU
+set_property PACKAGE_PIN F15 [get_ports btnU]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
+#Bank = CONFIG, Pin name = IO_L15N_T2_DQS_DOUT_CSO_B_14,	Sch name = BTNL
+set_property PACKAGE_PIN T16 [get_ports btnL]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnL]
+#Bank = 14, Pin name = IO_25_14,							Sch name = BTNR
+set_property PACKAGE_PIN R10 [get_ports btnR]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnR]
+#Bank = 14, Pin name = IO_L21P_T3_DQS_14,					Sch name = BTND
+set_property PACKAGE_PIN V10 [get_ports btnD]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnD]
  
 
 

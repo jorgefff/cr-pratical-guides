@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Sun May 19 20:22:20 2019
+--Date        : Wed May 29 05:15:19 2019
 --Host        : DESKTOP-UEV5SH3 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1353,12 +1353,13 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
+    btnCpuReset : in STD_LOGIC;
     clk : in STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    led : out STD_LOGIC_VECTOR ( 8 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=22,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -1498,13 +1499,54 @@ architecture STRUCTURE of design_1 is
     gpio_io_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio_io_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    gpio2_io_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    gpio2_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 16 downto 0 );
+    gpio2_io_o : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    gpio2_io_t : out STD_LOGIC_VECTOR ( 16 downto 0 )
   );
   end component design_1_axi_gpio_0_0;
-  signal axi_gpio_0_gpio_io_o : STD_LOGIC_VECTOR ( 15 downto 0 );
+  component design_1_dist_mem_gen_0_0 is
+  port (
+    a : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    d : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    clk : in STD_LOGIC;
+    we : in STD_LOGIC;
+    spo : out STD_LOGIC_VECTOR ( 8 downto 0 )
+  );
+  end component design_1_dist_mem_gen_0_0;
+  component design_1_xlslice_0_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 8 downto 0 )
+  );
+  end component design_1_xlslice_0_0;
+  component design_1_xlslice_1_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 16 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_xlslice_1_0;
+  component design_1_xlslice_2_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 16 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 8 downto 0 )
+  );
+  end component design_1_xlslice_2_0;
+  component design_1_xlslice_3_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 16 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  end component design_1_xlslice_3_0;
+  component design_1_xlslice_4_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  end component design_1_xlslice_4_0;
+  signal axi_gpio_0_gpio2_io_o : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal btnCpuReset_1 : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
+  signal dist_mem_gen_0_spo : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal mdm_1_debug_sys_rst : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
   signal microblaze_0_axi_dp_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1592,13 +1634,18 @@ architecture STRUCTURE of design_1 is
   signal rst_clk_wiz_1_100M_mb_reset : STD_LOGIC;
   signal rst_clk_wiz_1_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal sw_1 : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_axi_gpio_0_gpio2_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_axi_gpio_0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal xlslice_1_Dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlslice_2_Dout : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal xlslice_4_Dout : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal NLW_axi_gpio_0_gpio2_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal NLW_axi_gpio_0_gpio_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_axi_gpio_0_gpio_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_mdm_1_Interrupt_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_Interrupt_Ack_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 1 );
   signal NLW_rst_clk_wiz_1_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_clk_wiz_1_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_xlslice_3_Dout_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 0 );
   attribute BMM_INFO_PROCESSOR : string;
   attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
   attribute KEEP_HIERARCHY : string;
@@ -1608,16 +1655,17 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN design_1_clk, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000";
 begin
+  btnCpuReset_1 <= btnCpuReset;
   clk_1 <= clk;
-  led(15 downto 0) <= axi_gpio_0_gpio_io_o(15 downto 0);
+  led(8 downto 0) <= xlslice_0_Dout(8 downto 0);
   sw_1(15 downto 0) <= sw(15 downto 0);
 axi_gpio_0: component design_1_axi_gpio_0_0
      port map (
-      gpio2_io_i(15 downto 0) => B"0000000000000000",
-      gpio2_io_o(15 downto 0) => NLW_axi_gpio_0_gpio2_io_o_UNCONNECTED(15 downto 0),
-      gpio2_io_t(15 downto 0) => NLW_axi_gpio_0_gpio2_io_t_UNCONNECTED(15 downto 0),
+      gpio2_io_i(16 downto 0) => B"00000000000000000",
+      gpio2_io_o(16 downto 0) => axi_gpio_0_gpio2_io_o(16 downto 0),
+      gpio2_io_t(16 downto 0) => NLW_axi_gpio_0_gpio2_io_t_UNCONNECTED(16 downto 0),
       gpio_io_i(15 downto 0) => sw_1(15 downto 0),
-      gpio_io_o(15 downto 0) => axi_gpio_0_gpio_io_o(15 downto 0),
+      gpio_io_o(15 downto 0) => NLW_axi_gpio_0_gpio_io_o_UNCONNECTED(15 downto 0),
       gpio_io_t(15 downto 0) => NLW_axi_gpio_0_gpio_io_t_UNCONNECTED(15 downto 0),
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(8 downto 0) => microblaze_0_axi_periph_M01_AXI_ARADDR(8 downto 0),
@@ -1643,6 +1691,14 @@ clk_wiz_1: component design_1_clk_wiz_1_0
      port map (
       clk_in1 => clk_1,
       clk_out1 => microblaze_0_Clk
+    );
+dist_mem_gen_0: component design_1_dist_mem_gen_0_0
+     port map (
+      a(6 downto 0) => xlslice_4_Dout(6 downto 0),
+      clk => microblaze_0_Clk,
+      d(8 downto 0) => xlslice_2_Dout(8 downto 0),
+      spo(8 downto 0) => dist_mem_gen_0_spo(8 downto 0),
+      we => xlslice_1_Dout(0)
     );
 mdm_1: component design_1_mdm_1_0
      port map (
@@ -1825,12 +1881,37 @@ rst_clk_wiz_1_100M: component design_1_rst_clk_wiz_1_100M_0
       aux_reset_in => '1',
       bus_struct_reset(0) => rst_clk_wiz_1_100M_bus_struct_reset(0),
       dcm_locked => '1',
-      ext_reset_in => '0',
+      ext_reset_in => btnCpuReset_1,
       interconnect_aresetn(0) => NLW_rst_clk_wiz_1_100M_interconnect_aresetn_UNCONNECTED(0),
       mb_debug_sys_rst => mdm_1_debug_sys_rst,
       mb_reset => rst_clk_wiz_1_100M_mb_reset,
       peripheral_aresetn(0) => rst_clk_wiz_1_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_clk_wiz_1_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => microblaze_0_Clk
+    );
+xlslice_0: component design_1_xlslice_0_0
+     port map (
+      Din(8 downto 0) => dist_mem_gen_0_spo(8 downto 0),
+      Dout(8 downto 0) => xlslice_0_Dout(8 downto 0)
+    );
+xlslice_1: component design_1_xlslice_1_0
+     port map (
+      Din(16 downto 0) => axi_gpio_0_gpio2_io_o(16 downto 0),
+      Dout(0) => xlslice_1_Dout(0)
+    );
+xlslice_2: component design_1_xlslice_2_0
+     port map (
+      Din(16 downto 0) => axi_gpio_0_gpio2_io_o(16 downto 0),
+      Dout(8 downto 0) => xlslice_2_Dout(8 downto 0)
+    );
+xlslice_3: component design_1_xlslice_3_0
+     port map (
+      Din(16 downto 0) => axi_gpio_0_gpio2_io_o(16 downto 0),
+      Dout(6 downto 0) => NLW_xlslice_3_Dout_UNCONNECTED(6 downto 0)
+    );
+xlslice_4: component design_1_xlslice_4_0
+     port map (
+      Din(15 downto 0) => sw_1(15 downto 0),
+      Dout(6 downto 0) => xlslice_4_Dout(6 downto 0)
     );
 end STRUCTURE;

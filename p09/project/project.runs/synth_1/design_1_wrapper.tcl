@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,6 +31,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo d:/aulas/cr/projects/p09/project/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files d:/aulas/cr/projects/FSM_sorting_network/bin_nums.coe
 read_vhdl -library xil_defaultlib D:/aulas/cr/projects/p09/project/project.srcs/sources_1/imports/hdl/design_1_wrapper.vhd
 add_files D:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
@@ -55,6 +57,7 @@ set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p
 set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/aulas/cr/projects/p09/project/project.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

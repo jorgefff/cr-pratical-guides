@@ -45,17 +45,56 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
-#include <stdio.h>
-#include "platform.h"
-#include "xil_printf.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include "xil_printf.h"
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+//declare an XGpio and XGpio instance
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
 
 int main()
 {
-    init_platform();
+	/**/
+	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
+	GPIO_0_conf.DeviceId 	= XPAR_GPIO_0_DEVICE_ID;
+	GPIO_0_conf.IsDual 		= XPAR_GPIO_0_IS_DUAL;
+
+	//Initialize the XGpio instance
+	XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+
+	init_platform();
+
+	print("Starting\n\r");
+
+	xil_printf("The program\n\r");
+
+	//XGpio_DiscreteWrite(&GPIO_0, 1, 0xD1234567);
+
+	//xil_printf("HW_0 = %d\n",XGpio_DiscreteRead(&GPIO_0, 0));
+	xil_printf("HW_1 = %d\n\r",XGpio_DiscreteRead(&GPIO_0, 1));
+	xil_printf("HW_2 = %d\n\r",XGpio_DiscreteRead(&GPIO_0, 2));
+
+	for(int i = 0; i < 15; i++)
+	{
+		unsigned int value = XGpio_DiscreteRead(&GPIO_0, 1);
+		xil_printf("Value = %d\n\r",value++);
+		XGpio_DiscreteWrite(&GPIO_0, 1, value);
+	}
+
+	xil_printf("Terminates\n\r");
+
+	cleanup_platform();
+
+	return 0;
+    /*init_platform();
 
     print("Hello World---\n\r");
 
     cleanup_platform();
-    return 0;
+    return 0; */
 }

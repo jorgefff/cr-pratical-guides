@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x81A719ADE79165FC",
+      "boundary_crc": "0x146E3483593EFB7D",
       "device": "xc7a100tcsg324-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -26,7 +26,13 @@
       "mdm_1": "",
       "clk_wiz_1": "",
       "rst_clk_wiz_1_100M": "",
-      "axi_gpio_0": ""
+      "axi_gpio_0": "",
+      "dist_mem_gen_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "xlslice_4": ""
     },
     "ports": {
       "sw": {
@@ -36,7 +42,7 @@
       },
       "led": {
         "direction": "O",
-        "left": "15",
+        "left": "8",
         "right": "0"
       },
       "clk": {
@@ -59,6 +65,9 @@
             "value_src": "default"
           }
         }
+      },
+      "btnCpuReset": {
+        "direction": "I"
       }
     },
     "components": {
@@ -162,12 +171,6 @@
           }
         },
         "interface_nets": {
-          "microblaze_0_ilmb_cntlr": {
-            "interface_ports": [
-              "ilmb_bram_if_cntlr/BRAM_PORT",
-              "lmb_bram/BRAM_PORTB"
-            ]
-          },
           "microblaze_0_dlmb_bus": {
             "interface_ports": [
               "dlmb_v10/LMB_Sl_0",
@@ -196,6 +199,12 @@
             "interface_ports": [
               "DLMB",
               "dlmb_v10/LMB_M"
+            ]
+          },
+          "microblaze_0_ilmb_cntlr": {
+            "interface_ports": [
+              "ilmb_bram_if_cntlr/BRAM_PORT",
+              "lmb_bram/BRAM_PORTB"
             ]
           }
         },
@@ -485,12 +494,6 @@
           }
         },
         "interface_nets": {
-          "microblaze_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "m00_couplers_to_microblaze_0_axi_periph": {
             "interface_ports": [
               "M00_AXI",
@@ -503,16 +506,22 @@
               "xbar/S00_AXI"
             ]
           },
-          "m01_couplers_to_microblaze_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "microblaze_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -588,13 +597,118 @@
         "xci_name": "design_1_axi_gpio_0_0",
         "parameters": {
           "C_GPIO2_WIDTH": {
-            "value": "16"
+            "value": "17"
           },
           "C_GPIO_WIDTH": {
             "value": "16"
           },
           "C_IS_DUAL": {
             "value": "1"
+          }
+        }
+      },
+      "dist_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:dist_mem_gen:8.0",
+        "xci_name": "design_1_dist_mem_gen_0_0",
+        "parameters": {
+          "coefficient_file": {
+            "value": "../../../../../../../../FSM_sorting_network/bin_nums.coe"
+          },
+          "data_width": {
+            "value": "9"
+          },
+          "depth": {
+            "value": "128"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "8"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "9"
+          },
+          "DOUT_WIDTH": {
+            "value": "9"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "16"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DIN_WIDTH": {
+            "value": "17"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_2_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "8"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "17"
+          },
+          "DOUT_WIDTH": {
+            "value": "9"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_3_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "6"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "17"
+          },
+          "DOUT_WIDTH": {
+            "value": "7"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_4_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "6"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "7"
           }
         }
       }
@@ -612,6 +726,18 @@
           "microblaze_0/M_AXI_DP"
         ]
       },
+      "microblaze_0_axi_periph_M01_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M01_AXI",
+          "axi_gpio_0/S_AXI"
+        ]
+      },
+      "microblaze_0_debug": {
+        "interface_ports": [
+          "mdm_1/MBDEBUG_0",
+          "microblaze_0/DEBUG"
+        ]
+      },
       "microblaze_0_dlmb_1": {
         "interface_ports": [
           "microblaze_0/DLMB",
@@ -622,18 +748,6 @@
         "interface_ports": [
           "microblaze_0_axi_periph/M00_AXI",
           "mdm_1/S_AXI"
-        ]
-      },
-      "microblaze_0_debug": {
-        "interface_ports": [
-          "mdm_1/MBDEBUG_0",
-          "microblaze_0/DEBUG"
-        ]
-      },
-      "microblaze_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M01_AXI",
-          "axi_gpio_0/S_AXI"
         ]
       }
     },
@@ -649,7 +763,8 @@
           "mdm_1/S_AXI_ACLK",
           "rst_clk_wiz_1_100M/slowest_sync_clk",
           "axi_gpio_0/s_axi_aclk",
-          "microblaze_0_axi_periph/M01_ACLK"
+          "microblaze_0_axi_periph/M01_ACLK",
+          "dist_mem_gen_0/clk"
         ]
       },
       "rst_clk_wiz_1_100M_mb_reset": {
@@ -684,19 +799,58 @@
       "sw_1": {
         "ports": [
           "sw",
-          "axi_gpio_0/gpio_io_i"
-        ]
-      },
-      "axi_gpio_0_gpio_io_o": {
-        "ports": [
-          "axi_gpio_0/gpio_io_o",
-          "led"
+          "axi_gpio_0/gpio_io_i",
+          "xlslice_4/Din"
         ]
       },
       "clk_1": {
         "ports": [
           "clk",
           "clk_wiz_1/clk_in1"
+        ]
+      },
+      "btnCpuReset_1": {
+        "ports": [
+          "btnCpuReset",
+          "rst_clk_wiz_1_100M/ext_reset_in"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "led"
+        ]
+      },
+      "dist_mem_gen_0_spo": {
+        "ports": [
+          "dist_mem_gen_0/spo",
+          "xlslice_0/Din"
+        ]
+      },
+      "axi_gpio_0_gpio2_io_o": {
+        "ports": [
+          "axi_gpio_0/gpio2_io_o",
+          "xlslice_1/Din",
+          "xlslice_2/Din",
+          "xlslice_3/Din"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "dist_mem_gen_0/d"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "dist_mem_gen_0/we"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "dist_mem_gen_0/a"
         ]
       }
     },

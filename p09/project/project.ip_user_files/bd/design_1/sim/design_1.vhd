@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Sun May 19 20:22:20 2019
+--Date        : Wed May 29 01:22:47 2019
 --Host        : DESKTOP-UEV5SH3 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1353,6 +1353,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
+    btnCpuReset : in STD_LOGIC;
     clk : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 15 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 15 downto 0 )
@@ -1504,6 +1505,7 @@ architecture STRUCTURE of design_1 is
   );
   end component design_1_axi_gpio_0_0;
   signal axi_gpio_0_gpio_io_o : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal btnCpuReset_1 : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
@@ -1608,6 +1610,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN design_1_clk, FREQ_HZ 100000000, INSERT_VIP 0, PHASE 0.000";
 begin
+  btnCpuReset_1 <= btnCpuReset;
   clk_1 <= clk;
   led(15 downto 0) <= axi_gpio_0_gpio_io_o(15 downto 0);
   sw_1(15 downto 0) <= sw(15 downto 0);
@@ -1825,7 +1828,7 @@ rst_clk_wiz_1_100M: component design_1_rst_clk_wiz_1_100M_0
       aux_reset_in => '1',
       bus_struct_reset(0) => rst_clk_wiz_1_100M_bus_struct_reset(0),
       dcm_locked => '1',
-      ext_reset_in => '0',
+      ext_reset_in => btnCpuReset_1,
       interconnect_aresetn(0) => NLW_rst_clk_wiz_1_100M_interconnect_aresetn_UNCONNECTED(0),
       mb_debug_sys_rst => mdm_1_debug_sys_rst,
       mb_reset => rst_clk_wiz_1_100M_mb_reset,

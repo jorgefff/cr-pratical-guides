@@ -2,16 +2,16 @@ import os
 import binascii
 import random
 
-LENGTH = 9
+LENGTH = 24
 
 def generateBinCoe():
 	
-	f = open("bin_nums.coe", 'w')
+	f = open("bin_nums"+str(LENGTH)+".coe", 'w')
 	
 	text = "memory_initialization_radix = 2;\n"
 	text += "memory_initialization_vector =\n"
 	
-	starters = '0'*LENGTH + ",\n" + '1'*LENGTH+",\n"+"101010101,\n"	
+	starters = '0'*LENGTH + ",\n" + '1'*LENGTH+",\n"
 	text = text + starters
 
 	f.write(text)
@@ -20,8 +20,8 @@ def generateBinCoe():
 	f.write(first)
 	
 	prev = '0'
-	# range 4 -> first + 3 starts
-	for i in range(4,100):
+	# range 3 -> first + 2 starts
+	for i in range(3,100):
 		new_bin = bin(int('1',2) + int(prev,2))
 		new_bin = (LENGTH - len(new_bin[2:]))*'0' + new_bin[2:]
 		if i < 99:
@@ -34,7 +34,7 @@ def generateBinCoe():
 
 def generateRandBinCoe():
 	
-	f = open("bin_rand_nums.coe", 'w')
+	f = open("bin_rand_nums"+str(LENGTH)+".coe", 'w')
 	
 	text = "memory_initialization_radix = 2;\n"
 	text += "memory_initialization_vector =\n"

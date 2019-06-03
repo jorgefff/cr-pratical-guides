@@ -1,0 +1,610 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 383.648 ; gain = 63.410
+Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 494.707 ; gain = 104.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'design_1' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1354' bound to instance 'design_1_i' of component 'design_1' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'design_1' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1367]
+INFO: [Synth 8-3491] module 'design_1_HammingCounter_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_HammingCounter_0_0_stub.vhdl:5' bound to instance 'HammingCounter_0' of component 'design_1_HammingCounter_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1719]
+INFO: [Synth 8-638] synthesizing module 'design_1_HammingCounter_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_HammingCounter_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_IterativeSorter_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_IterativeSorter_0_0_stub.vhdl:5' bound to instance 'IterativeSorter_0' of component 'design_1_IterativeSorter_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1726]
+INFO: [Synth 8-638] synthesizing module 'design_1_IterativeSorter_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_IterativeSorter_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_addr_mux_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_addr_mux_0_0_stub.vhdl:5' bound to instance 'addr_mux_0' of component 'design_1_addr_mux_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1734]
+INFO: [Synth 8-638] synthesizing module 'design_1_addr_mux_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_addr_mux_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1741]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_axi_gpio_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1769]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_clk_wiz_1_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_dist_mem_gen_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dist_mem_gen_0_0_stub.vhdl:5' bound to instance 'dist_mem_gen_0' of component 'design_1_dist_mem_gen_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1774]
+INFO: [Synth 8-638] synthesizing module 'design_1_dist_mem_gen_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dist_mem_gen_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1782]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1815]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:951]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (1#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (2#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:821]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (3#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:821]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1289]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (4#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:951]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:242]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:456]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:510]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:538]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:620]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (5#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:242]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1958]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_unroll_mem_0_0' declared at 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_unroll_mem_0_0_stub.vhdl:5' bound to instance 'unroll_mem_0' of component 'design_1_unroll_mem_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1971]
+INFO: [Synth 8-638] synthesizing module 'design_1_unroll_mem_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/.Xil/Vivado-5608-DESKTOP-UEV5SH3/realtime/design_1_unroll_mem_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1980]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 9 - type: integer 
+	Parameter DIN_FROM bound to: 8 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice' (6#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (7#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_1_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_1_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1985]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 17 - type: integer 
+	Parameter DIN_FROM bound to: 16 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' (7#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (8#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_2_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_2_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1990]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_2_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 17 - type: integer 
+	Parameter DIN_FROM bound to: 8 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' (8#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_2_0' (9#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_2_0/synth/design_1_xlslice_2_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_3_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57' bound to instance 'xlslice_3' of component 'design_1_xlslice_3_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1995]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_3_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 17 - type: integer 
+	Parameter DIN_FROM bound to: 6 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' (9#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_3_0' (10#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_3_0/synth/design_1_xlslice_3_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_4_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57' bound to instance 'xlslice_4' of component 'design_1_xlslice_4_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:2000]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_4_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized3' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 6 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized3' (10#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_4_0' (11#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_4_0/synth/design_1_xlslice_4_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_5_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57' bound to instance 'xlslice_5' of component 'design_1_xlslice_5_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:2005]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_5_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized4' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 1152 - type: integer 
+	Parameter DIN_FROM bound to: 899 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized4' (11#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_5_0' (12#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_5_0/synth/design_1_xlslice_5_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_6_0' declared at 'd:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_6_0/synth/design_1_xlslice_6_0.v:57' bound to instance 'xlslice_6' of component 'design_1_xlslice_6_0' [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:2010]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_6_0' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_6_0/synth/design_1_xlslice_6_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized5' [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 400 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized5' (12#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_6_0' (13#1) [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xlslice_6_0/synth/design_1_xlslice_6_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (14#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/synth/design_1.vhd:1367]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (15#1) [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[399]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[398]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[397]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[396]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[395]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[394]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[393]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[392]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[391]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[390]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[389]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[388]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[387]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[386]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[385]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[384]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[383]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[382]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[381]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[380]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[379]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[378]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[377]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[376]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[375]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[374]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[373]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[372]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[371]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[370]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[369]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[368]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[367]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[366]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[365]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[364]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[363]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[362]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[361]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[360]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[359]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[358]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[357]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[356]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[355]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[354]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[353]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[352]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[351]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[350]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[349]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[348]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[347]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[346]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[345]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[344]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[343]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[342]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[341]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[340]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[339]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[338]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[337]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[336]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[335]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[334]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[333]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[332]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[331]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[330]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[329]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[328]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[327]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[326]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[325]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[324]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[323]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[322]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[321]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[320]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[319]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[318]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[317]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[316]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[315]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[314]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[313]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[312]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[311]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[310]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[309]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[308]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[307]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[306]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[305]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[304]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[303]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[302]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[301]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized5 has unconnected port Din[300]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 552.715 ; gain = 162.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 552.715 ; gain = 162.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 552.715 ; gain = 162.824
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/dist_mem_gen_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/dist_mem_gen_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_unroll_mem_0_0/design_1_unroll_mem_0_0/design_1_unroll_mem_0_0_in_context.xdc] for cell 'design_1_i/unroll_mem_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_unroll_mem_0_0/design_1_unroll_mem_0_0/design_1_unroll_mem_0_0_in_context.xdc] for cell 'design_1_i/unroll_mem_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_addr_mux_0_0/design_1_addr_mux_0_0/design_1_addr_mux_0_0_in_context.xdc] for cell 'design_1_i/addr_mux_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_addr_mux_0_0/design_1_addr_mux_0_0/design_1_addr_mux_0_0_in_context.xdc] for cell 'design_1_i/addr_mux_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_HammingCounter_0_0/design_1_HammingCounter_0_0/design_1_HammingCounter_0_0_in_context.xdc] for cell 'design_1_i/HammingCounter_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_HammingCounter_0_0/design_1_HammingCounter_0_0/design_1_HammingCounter_0_0_in_context.xdc] for cell 'design_1_i/HammingCounter_0'
+Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_IterativeSorter_0_0/design_1_IterativeSorter_0_0/design_1_IterativeSorter_0_0_in_context.xdc] for cell 'design_1_i/IterativeSorter_0'
+Finished Parsing XDC File [d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_IterativeSorter_0_0/design_1_IterativeSorter_0_0/design_1_IterativeSorter_0_0_in_context.xdc] for cell 'design_1_i/IterativeSorter_0'
+Parsing XDC File [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc:207]
+Finished Parsing XDC File [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/constrs_1/imports/projects/Nexys4Alunos.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 871.426 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 871.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 871.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 871.426 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/dist_mem_gen_0' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 871.426 ; gain = 481.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 871.426 ; gain = 481.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dist_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/unroll_mem_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/addr_mux_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/HammingCounter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/IterativeSorter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlslice_6. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 871.426 ; gain = 481.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 871.426 ; gain = 481.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 871.426 ; gain = 481.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out1' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 871.539 ; gain = 481.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 871.984 ; gain = 482.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_xbar_0               |         1|
+|2     |design_1_HammingCounter_0_0   |         1|
+|3     |design_1_IterativeSorter_0_0  |         1|
+|4     |design_1_addr_mux_0_0         |         1|
+|5     |design_1_axi_gpio_0_0         |         1|
+|6     |design_1_clk_wiz_1_0          |         1|
+|7     |design_1_dist_mem_gen_0_0     |         1|
+|8     |design_1_mdm_1_0              |         1|
+|9     |design_1_microblaze_0_0       |         1|
+|10    |design_1_rst_clk_wiz_1_100M_0 |         1|
+|11    |design_1_unroll_mem_0_0       |         1|
+|12    |design_1_dlmb_bram_if_cntlr_0 |         1|
+|13    |design_1_dlmb_v10_0           |         1|
+|14    |design_1_ilmb_bram_if_cntlr_0 |         1|
+|15    |design_1_ilmb_v10_0           |         1|
+|16    |design_1_lmb_bram_0           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |design_1_HammingCounter_0_0_bbox_0    |     1|
+|2     |design_1_IterativeSorter_0_0_bbox_1   |     1|
+|3     |design_1_addr_mux_0_0_bbox_2          |     1|
+|4     |design_1_axi_gpio_0_0_bbox_3          |     1|
+|5     |design_1_clk_wiz_1_0_bbox_4           |     1|
+|6     |design_1_dist_mem_gen_0_0_bbox_5      |     1|
+|7     |design_1_dlmb_bram_if_cntlr_0_bbox_9  |     1|
+|8     |design_1_dlmb_v10_0_bbox_10           |     1|
+|9     |design_1_ilmb_bram_if_cntlr_0_bbox_11 |     1|
+|10    |design_1_ilmb_v10_0_bbox_12           |     1|
+|11    |design_1_lmb_bram_0_bbox_13           |     1|
+|12    |design_1_mdm_1_0_bbox_6               |     1|
+|13    |design_1_microblaze_0_0_bbox_7        |     1|
+|14    |design_1_rst_clk_wiz_1_100M_0_bbox_14 |     1|
+|15    |design_1_unroll_mem_0_0_bbox_15       |     1|
+|16    |design_1_xbar_0_bbox_8                |     1|
+|17    |IBUF                                  |    17|
+|18    |OBUF                                  |     4|
++------+--------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  3148|
+|2     |  design_1_i                  |design_1                              |  3127|
+|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |   263|
+|4     |    xlslice_0                 |design_1_xlslice_0_0                  |     0|
+|5     |    xlslice_1                 |design_1_xlslice_1_0                  |     0|
+|6     |    xlslice_2                 |design_1_xlslice_2_0                  |     0|
+|7     |    xlslice_3                 |design_1_xlslice_3_0                  |     0|
+|8     |    xlslice_4                 |design_1_xlslice_4_0                  |     0|
+|9     |    xlslice_5                 |design_1_xlslice_5_0                  |     0|
+|10    |    xlslice_6                 |design_1_xlslice_6_0                  |     0|
+|11    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 697 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 884.082 ; gain = 175.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 884.082 ; gain = 494.191
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 894.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 894.336 ; gain = 510.688
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 894.336 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/aulas/cr/projects/projecto/SortWeights_4/SortWeights_4.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 06:38:39 2019...

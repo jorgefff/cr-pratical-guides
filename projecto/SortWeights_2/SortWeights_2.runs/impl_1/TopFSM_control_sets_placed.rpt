@@ -1,0 +1,173 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue May 28 16:58:35 2019
+| Host         : DESKTOP-UEV5SH3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopFSM_control_sets_placed.rpt
+| Design       : TopFSM
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   105 |
+| Unused register locations in slices containing registers |   408 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |          100 |
+|      5 |            1 |
+|      7 |            1 |
+|     13 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             413 |          211 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             919 |          586 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             412 |          194 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------+----------------------+------------------+----------------+
+|         Clock Signal        |       Enable Signal       |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-----------------------------+---------------------------+----------------------+------------------+----------------+
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[35]_65      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[98]_2       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[17]_83      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[24]_76      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[0]_0        | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[31]_69      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[16]_84      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[26]_74      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[11]_89      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[13]_87      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[23]_77      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[27]_73      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[34]_66      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[33]_67      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[39]_61      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[25]_75      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[29]_71      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[40]_60      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[38]_62      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[14]_86      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[15]_85      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[10]_90      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[19]_81      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[1]_99       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[28]_72      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[32]_68      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[64]_36      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[36]_64      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[3]_97       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[12]_88      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[18]_82      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[20]_80      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[21]_79      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[37]_63      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[2]_98       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[41]_59      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[42]_58      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[22]_78      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[30]_70      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[43]_57      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[44]_56      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[45]_55      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[46]_54      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[47]_53      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[82]_18      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[50]_50      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[56]_44      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[48]_52      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[52]_48      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[66]_34      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[70]_30      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[49]_51      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[77]_23      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[84]_16      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[72]_28      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[91]_9       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[7]_93       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[92]_8       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[78]_22      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[71]_29      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[80]_20      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[90]_10      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[58]_42      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[68]_32      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[55]_45      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[69]_31      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[74]_26      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[88]_12      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[93]_7       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[53]_47      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[57]_43      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[51]_49      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[5]_95       | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[6]_94       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[73]_27      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[75]_25      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[67]_33      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[79]_21      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[76]_24      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[85]_15      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[86]_14      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[54]_46      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[62]_38      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[4]_96       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[63]_37      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[81]_19      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[83]_17      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[87]_13      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[61]_39      | reset_sort_reg_n_0   |                3 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[95]_5       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[96]_4       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[99]_1       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[59]_41      | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[89]_11      | reset_sort_reg_n_0   |                4 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[97]_3       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[60]_40      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[94]_6       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[9]_91       | reset_sort_reg_n_0   |                1 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[65]_35      | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | Sorter/N_MyAr[8]_92       | reset_sort_reg_n_0   |                2 |              4 |
+|  clk_IBUF_BUFG              | unroll/E[0]               | btnC_IBUF            |                2 |              5 |
+| ~clk_IBUF_BUFG              | unroll/addr_in[6]_i_1_n_0 | reset_unroll_reg_n_0 |                3 |              7 |
+|  clk_IBUF_BUFG              |                           |                      |               10 |             13 |
+| ~reset_weights_reg_n_0_BUFG |                           |                      |              201 |            400 |
+| ~clk_IBUF_BUFG              |                           | reset_unroll_reg_n_0 |              586 |            919 |
++-----------------------------+---------------------------+----------------------+------------------+----------------+
+
+
